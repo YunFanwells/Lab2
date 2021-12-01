@@ -1,0 +1,331 @@
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.font.im/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4taVIUx6EQRjA.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.font.im/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4kaVIUx6EQRjA.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.font.im/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4saVIUx6EQRjA.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.font.im/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4jaVIUx6EQRjA.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+
+/* hebrew */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.font.im/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4iaVIUx6EQRjA.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.font.im/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4vaVIUx6EQRjA.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(/public/fa.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(/public/fb.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    padding-top: 18px;
+    height: 80px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 11px 0 hsl(0deg 0% 87% / 50%);
+}
+
+.header .logo {
+    display: block;
+    height: 48px;
+    width: 200px;
+}
+
+.header .logo img {
+    display: block;
+    height: 48px;
+    width: auto;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+}
+
+.header-links a {
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 16px 0;
+    margin-left: 20px;
+    color: #fc4237;
+    position: relative;
+    font-style: italic;
+}
+
+.header-links a::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #fc4237;
+}
+
+.header-links a:hover ::after {
+    width: 100%;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url('/public/banner/bg1.jpg') no-repeat center;
+    background-size: cover;
+    transition: 1s ease;
+    min-width: 1200px;
+
+}
+
+.login-form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+
+}
+
+.login-box {
+    width: 420px;
+    height: 400px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+.login-box h2 {
+    font-weight: bolder;
+    font-size: 32px;
+    font-style: italic;
+    color: #fc4237;
+}
+
+.login-form h3 {
+    font-weight: 700;
+    font-size: 24px;
+    font-style: italic;
+    position: relative;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 52px;
+}
+
+.login-form h3::before {
+    content: '';
+    position: absolute;
+    background: url('/public/login-icon.png') no-repeat center;
+    width: 52px;
+    height: 52px;
+    background-size: cover;
+    left: 100px;
+}
+
+.login-form input {
+    display: inline-block;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    height: 40px;
+    padding: 4px 11px 4px 90px;
+    color: rgba(0, 0, 0, .65);
+    font-size: 14px;
+    line-height: 1.5;
+    outline: none;
+}
+
+.login-form .row {
+    position: relative;
+    padding: 10px 0;
+}
+
+.login-form .label {
+    position: absolute;
+    width: 70px;
+    text-align: right;
+    left: 8px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.login-form .submit {
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: url('/public/login-btn.png') no-repeat center;
+    background-size: cover;
+    margin: 20px auto;
+}
+
+.reg-link {
+    text-align: center;
+    color: #fc4237
+}
+
+.reg {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.reg .side {
+    height: 100%;
+    width: 480px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("./reg.webp");
+    transition: .3s ease;
+}
+
+.reg .reg-box {
+    flex: 1;
+    width: calc(100% - 480px);
+    transition: .3s ease;
+    padding:20px;
+    text-align: center;
+}
+.reg-row{
+    padding-top: 24px;
+}
+.reg-row input{
+    display: block;
+    width: 100%;
+    border: 1px #aaa solid;
+    border-radius: 4px;
+    background: 0 0;
+    text-align: left;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+.reg-form{
+    width: 480px;
+    margin:0 auto;
+}
+.reg-form h3{
+    font-size: 32px;
+}
+.reg-form .submit{
+    border: 1px #3083ff solid;
+    border-radius: 4px;
+    background-color: #3487ff;
+    box-shadow: 0 5px 8px 0 rgb(24 95 255 / 10%);
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    background-image: linear-gradient(
+            0deg,#398bff,#3083ff);
+    width: 478px;
+    height: 60px;
+    margin: 40px 0 8px;
+    font-size: 24px;
+}
+.reg-form .submit:hover{
+    background-color: #3580eb;
+    background-image: linear-gradient(
+            0deg,#3580eb,#2c79eb);
+}
+@media screen and (max-width: 990px) {
+    .reg .side {
+        width: 380px;
+    }
+    .reg .reg-box{
+        width: calc(100% - 380px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .reg .side {
+        width: 300px;
+    }
+    .reg .reg-box{
+        width: calc(100% - 300px);
+    }
+}
+@media screen and (max-width: 810px) {
+    .reg .side {
+        width: 0;
+    }
+    .reg .reg-box{
+        width: 100%;
+    }
+}
